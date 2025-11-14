@@ -1,144 +1,145 @@
-html {
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background-color: rgb(32, 32, 32);
-  border-image-source: url("../images/border.png");
-  border-image-slice: 50;
-  border-image-width: 15px 0 0 0;
-  border-image-repeat: repeat;
-  display: flex;
-  justify-content: center;
-}
-
-.header {
-  display: flex;
-  width: 1100px;
-  color: rgb(23, 212, 212);
-  justify-content: space-between;
-}
-.header div {
-  font-size: 3em;
-  margin: 1em;
-  margin-left: 0em;
-}
-.header div img {
-  width: 1em;
-}
-.header ul {
-  margin: 3em;
-  margin-right: 0em;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-.header ul li {
-  list-style-type: none;
-}
-.header ul li a {
-  text-decoration: none;
-  color: rgb(23, 212, 212);
-  padding: 1em;
-  border-bottom: 0.3em solid rgb(23, 212, 212);
-}
-.header ul li a:hover {
-  color: white;
-  border-bottom: 0.3em solid white;
-}
-.header ul li:nth-child(1) a {
-  padding-left: 0em;
-}
-.header ul li:nth-child(5) a {
-  padding-right: 0em;
+  background-color: #2b2d33;
 }
 
 main {
-  margin-top: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-main div {
-  width: 1100px;
-}
-main .ii {
-  display: flex;
-  justify-content: space-between;
-}
-main .ii img {
-  border: 0.4em solid black;
-}
-main .ii ul {
-  padding: 0em;
-  margin: 0em;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-}
-main .ii ul li {
-  list-style-type: none;
-  width: 20em;
-}
-main .ii ul li a {
-  height: inherit;
-  display: block;
-  text-decoration: none;
-  color: black;
-  background-color: rgb(23, 212, 212);
-  font-weight: 800;
-  font-size: 1.1em;
-  padding: 1em;
-  text-align: center;
-}
-main .ii ul li a span {
-  color: white;
-}
-main .ii ul li a:hover {
-  color: rgb(23, 212, 212);
-  background-color: black;
+  justify-content: space-evenly;
 }
 
 footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: rgb(32, 32, 32);
-  border-image-source: url("../images/border.png");
-  border-image-slice: 50;
-  border-image-width: 15px 0 0 0;
-  border-image-repeat: repeat;
+  background-color: #2b2d33;
 }
-footer div {
+
+.container {
   width: 1100px;
-}
-footer div ul {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding: 0em;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: 18em;
 }
-footer div ul li {
-  list-style-type: none;
+.container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-footer div ul li a {
-  height: inherit;
-  display: block;
-  text-decoration: none;
-  color: rgb(23, 212, 212);
-  font-weight: 800;
-  padding: 1em;
-  text-align: left;
-  border-left: 0.3em solid rgb(23, 212, 212);
+
+#header_with_logo {
+  justify-content: space-between;
+  align-items: center;
+  color: #00cccc;
 }
-footer div ul li a:hover {
+#header_with_logo #logo {
+  font-size: 3rem;
+  padding: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+#header_with_logo #logo img {
+  margin: 0 -1.2rem -1rem -1rem;
+  position: relative;
+}
+#header_with_logo ul {
+  display: flex;
+}
+#header_with_logo ul li {
+  padding: 0 1rem 1rem 1rem;
+  border-bottom: 4px solid #00cccc;
+}
+#header_with_logo ul li:hover {
+  border-bottom-color: white;
+  color: white;
+  cursor: pointer;
+}
+#header_with_logo ul li:first-child {
+  padding-left: 0;
+}
+#header_with_logo ul li:last-child {
+  padding-right: 0;
+}
+
+#feature {
+  justify-content: space-between;
+}
+#feature img {
+  border: 2px solid #2b2d33;
+  outline: 1px solid #8a8b8d;
+}
+#feature ul {
+  font-size: 1rem;
+}
+#feature ul li {
+  border: 1px solid #8a8b8d;
+  padding: 1rem 3.5rem;
+  text-align: center;
+  font-weight: 700;
+  background-color: #00cccc;
+  letter-spacing: 0.1rem;
+}
+#feature ul li span {
   color: white;
 }
-footer .cr {
-  font-weight: bolder;
-  background-color: rgb(23, 212, 212);
+#feature ul li:hover {
+  background-color: #2b2d33;
+  color: #00cccc;
+  cursor: pointer;
+}
+
+#links {
+  color: #00cccc;
+  justify-content: space-between;
+  font-weight: 700;
+}
+#links ul {
+  margin: 2rem 0;
+  border-left: 3px solid #00cccc;
+}
+#links ul li {
+  padding: 0 0 1rem 2rem;
+  letter-spacing: 0.1rem;
+}
+#links ul li:last-child {
+  padding-bottom: 0;
+}
+#links ul li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#copyright {
+  margin: 2rem auto;
+  background-color: #00cccc;
+  font-weight: 700;
+  justify-content: center;
+}
+#copyright p {
+  margin: 0;
+  padding: 0;
   text-align: center;
-  font-size: 0.8em;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*
+	1. color is not correct
+	2. body has a margin to be 0.
+	3. body need to be 100vh.
+	4. main need to be flex-grow: 1.
+	5. footer need three colume.
+	6. about the picture, if the margin is negetive, then it will close to the letter
+	7. use position reletive to make the picture show above the letter.
+	8. big img have two border, one is black, one is well you can pick from the inspector.
+	9. the ul on the left's padding is different on the top/bottom left/right
+	9. ul on the left have the border and have the border in the li
+	10. set the letter spacing for the ul
+	11. using margin left and right auto to make the container center
+
+
+*//*# sourceMappingURL=style.css.map */
